@@ -8,11 +8,13 @@ o.ordersellingprice - o.ordercostprice as orderprofit ,
 o.ordercostprice,
 o.ordersellingprice,
 --raw customers
+c.customerid,
 c.customername,
 c.segment,
 c.country,
 --raw product
 p.category,
+p.productid,
 p.productname,
 p.subcategory
 from {{ ref('raw_orders') }}  as o
