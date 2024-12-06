@@ -44,3 +44,5 @@ models:
       +materialized: view
     reporting:
       +materialized: table
+    dim:
+      +materialized: table
