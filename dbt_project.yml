@@ -36,13 +36,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 
 models:
-  globalmart:
-    # Applies to all files under models/example/
-    raw:
-      +materialized: table
-    staging:
-      +materialized: view
-    reporting:
-      +materialized: table
+  dbt-training: 
+    +materialized: view
     dim:
       +materialized: table

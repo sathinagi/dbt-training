@@ -1,10 +1,3 @@
-
-{{
-    config(
-        materialized='table'
-    )
-}}
-
 with raw_listings
 as
 (
