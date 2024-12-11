@@ -1,3 +1,8 @@
+{{
+    config(
+        materialized='ephemeral'
+    )
+}}
 with raw_reviews
 as
 (
