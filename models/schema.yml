@@ -18,3 +18,7 @@ models:
         tests:
           - accepted_values:
               values: ['Hotel room','Shared room','Private room','Entire home/apt']
+
+      - name: minimum_nights
+        tests:
+          - positive_values

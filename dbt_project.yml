@@ -36,7 +36,8 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 
 models:
-  dim:
-    +materialized: table
-  src:
-    +materialized: emphemeral
+  globalmart:
+    dim:
+      +materialized: table
+    src:
+      +materialized: emphemeral
